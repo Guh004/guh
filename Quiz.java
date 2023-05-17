@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
-public class Quiz {
+public class QuizGame {
     private static int score = 0; // Pontuação inicial do jogador
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int choice;
+  
+      int choice;
 
         do {
             displayMenu(); // Exibir o menu
@@ -15,32 +16,42 @@ public class Quiz {
                 case 1:
                     startQuiz(); // Iniciar o jogo de quiz
                     break;
-                case 2:
-                    displayScore(); // Exibir a pontuação atual
-                    break;
+              case 2:
+                    System.out.println("Aqui estão a regras do jogo"); // Mensagem de regras
+                break;
+                
                 case 3:
-                    System.out.println("Obrigado por jogar! Até a próxima!"); // Mensagem de saída
+                   System.out.println("Obrigado por jogar! Sua pontuação final: " + score + " pontos"); // Mensagem de saída
                     break;
-                default:
-                    System.out.println("Opção inválida. Por favor, escolha uma opção válida."); // Mensagem de opção inválida
+              case 4:
+                    System.out.println("Obrigado por jogar! Até a próxima!"); // Mensagem de opção inválida
                     break;
             }
-        } while (choice != 3);
+        } while (choice != 4);
 
         scanner.close();
     }
 
+  private static void regras() {
+
+        System.out.println("Regras a exibir");
+      
+  }
     private static void displayMenu() {
         System.out.println("Bem-vindo ao Jogo de Quiz!");
         System.out.println("Menu:");
         System.out.println("1. Jogar");
-        System.out.println("2. Pontuação");
-        System.out.println("3. Sair");
+        System.out.println("2. Regras");
+        System.out.println("3. Pontuação");
+        System.out.println("4. Sair");
         System.out.print("Digite o número correspondente à opção desejada: ");
+      
     }
-
     private static void startQuiz() {
         Scanner scanner = new Scanner(System.in);
+      
+
+        System.out.println("Iniciando o Quiz...");
 
         // Pergunta 1
         System.out.println("Pergunta 1: Qual é a capital do Brasil?");
@@ -94,10 +105,45 @@ public class Quiz {
             System.out.println("Resposta incorreta!");
         }
 
-        scanner.close();
-    }
+        System.out.println();
 
-    private static void displayScore() {
-        System.out.println("Pontuação atual: " + score + " pontos");
+        // Pergunta 4
+        System.out.println("Pergunta 4: Qual é a capital da França?");
+        System.out.println("a) Londres");
+        System.out.println("b) Paris");
+        System.out.println("c) Roma");
+        System.out.println("d) Madrid");
+
+        answer = scanner.nextLine();
+
+        if (answer.equalsIgnoreCase("b")) {
+            System.out.println("Resposta correta!");
+            score += 10;
+        } else {
+            System.out.println("Resposta incorreta!");
+        }
+
+        System.out.println();
+
+        // Pergunta 5
+        System.out.println("Pergunta 5: Qual é o maior oceano do mundo?");
+        System.out.println("a) Oceano Atlântico");
+        System.out.println("b) Oceano Índico");
+        System.out.println("c) Oceano Pacífico");
+        System.out.println("d) Oceano Ártico");
+
+        answer = scanner.nextLine();
+
+        if (answer.equalsIgnoreCase("c")) {
+            System.out.println("Resposta correta!");
+            score += 10;
+        } else{
+System.out.println("Resposta incorreta!");   
+     
+} 
+      
+        System.out.println("Obrigado por jogar! Sua pontuação final: " + score + " pontos");
+
     }
+  
 }
