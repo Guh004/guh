@@ -67,6 +67,7 @@ System.out.println("=========================");
       
 
         System.out.println("Iniciando o FutQuiz!Boa sorte!");
+      System.out.println();
 
         // Pergunta 1
         System.out.println("Pergunta 1: Qual país sediou a Copa do Mundo de 2018?");
@@ -78,8 +79,9 @@ System.out.println("=========================");
         String answer = scanner.nextLine();
 
         if (answer.equalsIgnoreCase("c")) {
-            System.out.println("Resposta correta!");
+            System.out.println("Resposta correta! ");
             score += 10;
+          System.out.println("Voce ganhou 10 pontos");
         } else {
             System.out.println("Resposta incorreta!");
         }
@@ -98,6 +100,7 @@ System.out.println("=========================");
         if (answer.equalsIgnoreCase("b")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else {
             System.out.println("Resposta incorreta!");
         }
@@ -117,6 +120,7 @@ System.out.println("=========================");
         if (answer.equalsIgnoreCase("b")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else {
             System.out.println("Resposta incorreta!");
         }
@@ -135,6 +139,7 @@ System.out.println("=========================");
         if (answer.equalsIgnoreCase("b")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else {
             System.out.println("Resposta incorreta!");
         }
@@ -153,10 +158,11 @@ System.out.println("=========================");
         if (answer.equalsIgnoreCase("b")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else{
-System.out.println("Resposta incorreta!");   
-     
+System.out.println("Resposta incorreta!");    
 } 
+      System.out.println();
       // Pergunta 6
         System.out.println("Pergunta 6: Qual jogador brasileiro foi o primeiro a vencer o prêmio de Jogador do Ano da FIFA?");
         System.out.println("a) Romário");
@@ -169,9 +175,11 @@ System.out.println("Resposta incorreta!");
         if (answer.equalsIgnoreCase("c")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else{
 System.out.println("Resposta incorreta!");   
 } 
+      System.out.println();
       // Pergunta 7
         System.out.println("Pergunta 7: Qual país venceu a Copa do Mundo de 2010?");
         System.out.println("a) Espanha");
@@ -184,10 +192,11 @@ System.out.println("Resposta incorreta!");
         if (answer.equalsIgnoreCase("a")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else{
-System.out.println("Resposta incorreta!");   
-     
-} 
+System.out.println("Resposta incorreta!");       
+}
+      System.out.println();
       // Pergunta 8
         System.out.println("Pergunta 8: Quantas vezes a seleção brasileira ficou em segundo lugar na Copa do Mundo?");
         System.out.println("a) 2 vezes");
@@ -200,10 +209,11 @@ System.out.println("Resposta incorreta!");
         if (answer.equalsIgnoreCase("c")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else{
-System.out.println("Resposta incorreta!");   
-     
+System.out.println("Resposta incorreta!");     
 } 
+      System.out.println();
       // Pergunta 9
         System.out.println("Pergunta 9: Qual é o maior estádio de futebol do Brasil?");
         System.out.println("a) Maracanã");
@@ -216,10 +226,11 @@ System.out.println("Resposta incorreta!");
         if (answer.equalsIgnoreCase("a")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else{
-System.out.println("Resposta incorreta!");   
-     
+System.out.println("Resposta incorreta!");        
 } 
+      System.out.println();
       // Pergunta 10
         System.out.println("Pergunta 10: Quantas vezes o Santos FC venceu a Copa Libertadores da América?");
         System.out.println("a) 2 vezes");
@@ -232,6 +243,7 @@ System.out.println("Resposta incorreta!");
         if (answer.equalsIgnoreCase("b")) {
             System.out.println("Resposta correta!");
             score += 10;
+           System.out.println("Voce ganhou 10 pontos");
         } else{
 System.out.println("Resposta incorreta!");   
      
@@ -239,5 +251,4 @@ System.out.println("Resposta incorreta!");
         System.out.println("Obrigado por jogar! Sua pontuação final: " + score + " pontos");
 
     }
-  
 }
