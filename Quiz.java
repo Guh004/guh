@@ -19,15 +19,16 @@ public class QuizGame {
               case 2:
                     startRegras(); // Mensagem de regras
                 break;
-                
-                case 3:
+              case 3: startCreditos(); // Mensagem de regras
+                break;
+                case 4:
                    System.out.println("Obrigado por jogar! Sua pontuação final: " + score + " pontos"); // Mensagem de saída
                     break;
-              case 4:
+              case 5:
                     System.out.println("Obrigado por jogar! Até a próxima!"); // Mensagem de opção inválida
                     break;
             }
-        } while (choice != 4);
+        } while (choice != 5);
 
         scanner.close();
     }
@@ -43,6 +44,17 @@ System.out.println("=========================");
     System.out.println("=========================");
       
   }
+  private static void startCreditos() {
+System.out.println("=========================");
+    System.out.println("Creditos:");
+    System.out.println("ﾠ");
+    System.out.println("Bruno Conte ");
+    System.out.println("Gustavo Miranda ");
+    System.out.println("Vitor Feitosa ");
+    System.out.println("ﾠ");
+    System.out.println("=========================");
+      
+  }
     private static void displayMenu() {
       System.out.println("\u001B[34m");
         System.out.println("Bem-vindo ao FutQuiz!");
@@ -54,8 +66,10 @@ System.out.println("=========================");
         System.out.println("ﾠ");
         System.out.println("1. Jogar");
         System.out.println("2. Regras");
-        System.out.println("3. Pontuação");
-        System.out.println("4. Sair");
+        System.out.println("3. Creditos");
+        System.out.println("4. Pontuação");
+        System.out.println("5. Sair");
+      
        System.out.println("ﾠﾠ");
         System.out.println("Digite à opção desejada: ");
        System.out.println("=========================ﾠ");
